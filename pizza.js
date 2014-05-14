@@ -10,6 +10,7 @@ function calculate()
 
 	costPerPerson = totalCost/people;
 	
-	document.getElementById('main').innerhtml= costPerPerson;
+	document.getElementById('costPerPerson').innerHTML = costPerPerson;
+
 }
 -->

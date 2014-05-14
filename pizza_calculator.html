@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="pizza_calculator.css">
-    <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
-  </head>
+    <script type="text/javascript" src="pizza.js"></script>
   <body>
   	<h1>Pizza Calculator</h1>
   	<section class="info">
@@ -14,7 +13,8 @@
 	    <input type="text" name="number_of_people" id="number_of_people" required></br>
 	    <label for="total_cost">Enter Total Cost</label></br>
 	    <input type="text" name="total_cost" id="total_cost" required></br>
-	    <input type="submit" name="submit" id="submit" value="submit">
+	    <button type="button" onclick="calculate()"> calculate</button>
+      <div id="costPerPerson"></div>
     </section>
   </body>
 </html>
