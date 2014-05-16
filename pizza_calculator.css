@@ -1,5 +1,31 @@
 body {
-	background-color: pink;
+	
+background: -moz-linear-gradient(top, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%); 
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0b7a1), color-stop(50%,#8c3310), color-stop(51%,#752201), color-stop(100%,#bf6e4e)); 
+
+background: -webkit-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); 
+
+background: -o-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); 
+
+background: -ms-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); 
+
+background: linear-gradient(to bottom, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); 
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); 
+
 	text-align: center;
+}
+
+a.btTxt submit {
+display: block;
+width: 294px;
+height: 87px;
+cusror: pointer;
+background-image: url(rollover-image-button-1.png);
+text-indent: -9999em;
+}
+a.btTxt submit:hover {
+background-image: url(rollover-image-button-2.png);
 }
 
