@@ -11,26 +11,28 @@
   	<h1>Pizza Calculator</h1>
   	<section class="info">
 	  	<label for="number_of_people">How many people are getting pizza</label></br>
-	    <input type="text" name="number_of_people" id="number_of_people" required></br>
+	    <input type="text" name="number_of_people" size="4" id="number_of_people" required></br>
+
 	    <label for="total_cost">How much did the pizza cost</label></br>
+      <input type="text" name="total_cost" size="6" id="total_cost" required></br>
 
-	    <input type="text" name="total_cost" id="total_cost" required></br>
       <label for="number_of_pizza">How many pizza's did you buy</label></br>
+      <input type="text" name="number_of_pizza" size="4" id="number_of_pizza" required></br>
 
-      <input type="text" name="number_of_pizza" id="number_of_pizza" required></br>
       <label for="pizzaSize">What size do you want</label></br>
+      <input type="radio" name="pizzaSize" id="small" value="small">
 
-      <input type="radio" name="pizzasize" id="small" value="small">
       <label for="small">small</label>
+      <input type="radio" name="pizzaSize" id="medium" value="medium">
 
-      <input type="radio" name="pizzasize" id="medium" value="medium">
       <label for="medium">medium</label>
+      <input type="radio" name="pizzaSize" id="large" value="large">
 
-      <input type="radio" name="pizzasize" id="large" value="large">
       <label for="large">large</label></br>
+      <button type="button" onclick="calculate()"> calculate</button>
 
-	    <button type="button" onclick="calculate()"> calculate</button>
       <div id="costPerPerson"></div>
+      <div id="pizzaSize"></div>
     </section>
   </body>
 </html>

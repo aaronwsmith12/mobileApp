@@ -11,24 +11,27 @@ function calculate()
 	totalCost = document.getElementById('total_cost').value;
 	people = document.getElementById('number_of_people').value;
 	pizzaSize = document.getElementById('pizzaSize').value;
+	pizzas = document.getElementById('number_of_pizza').value;
 
-	costPerPerson = totalCost/people;
+	if (document.getElementById('small').checked) {
+  pizzaSlices = 8;
+  	}
 
-	slicesPerPerson = (pizzaSlices * pizzas) /people;
+  	else if (document.getElementById('large').checked) {
+  pizzaSlices = 16;
+  	}
 
-	if (pizzaSize == small) {
-		pizzaSlices = 8;
+  	else {
+  pizzaSlices = 12;
+  	}
 
-	} else if (pizzaSize == medium) {
-		pizzaSlices = 12;
+	costPerPerson = (totalCost/people).toFixed(2);
 
-	} else {
-		pizzaSlices = 16;
-
-	}
-
+	slicesPerPerson = ((pizzaSlices * pizzas) /people).toFixed(0);
 
 	document.getElementById('costPerPerson').innerHTML = costPerPerson;
+
+	document.getElementById('pizzaSize').innerHTML = slicesPerPerson;
 	
 
 }
