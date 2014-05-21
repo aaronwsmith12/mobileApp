@@ -9,14 +9,13 @@ function calculate()
 	
 	totalCost = document.getElementById('total_cost').value;
 	people = document.getElementById('number_of_people').value;
-	pizzas = document.getElementById('').value;
+	pizzas = document.getElementById('number_of_pizza').value;
 
 	costPerPerson = totalCost/people;
 	slicesPerPerson = (pizzas * slicesPerPizzas) / people;
 	
 	
 	document.getElementById('costPerPerson').innerHTML = costPerPerson;
-	document.getElementById('').innerHTML = slicesPerPerson;
 	
 	var pizzaSize;
 	var pizzaSlices;
@@ -25,11 +24,11 @@ function calculate()
 	
 	totalCost = document.getElementById('total_cost').value;
 	people = document.getElementById('number_of_people').value;
-	pizzaSize = document.getElementById('pizzaSize').value;
+	pizzaSize = document.getElementsByName('pizzasize').value;
 
 	costPerPerson = totalCost/people;
 
-	slicesPerPerson = (pizzaSlices * pizzas) /people;
+	
 
 	if (pizzaSize == small) {
 		pizzaSlices = 8;
@@ -41,6 +40,8 @@ function calculate()
 		pizzaSlices = 12;
 	}
 
-
+	slicesPerPerson = (pizzaSlices * pizzas) /people;
+	
 	document.getElementById('costPerPerson').innerHTML = costPerPerson;
+	document.getElementById('slicePerPerson').innerHTML = slicesPerPerson;
 }
