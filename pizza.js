@@ -40,7 +40,9 @@ function calculate()
 		pizzaSlices = 12;
 	}
 
-	slicesPerPerson = (pizzaSlices * pizzas) /people;
+	costPerPerson = (totalCost/people).toFixed(2);
+
+	slicesPerPerson = ((pizzaSlices * pizzas) /people).toFixed(0);
 	
 	document.getElementById('costPerPerson').innerHTML = costPerPerson;
 	document.getElementById('slicePerPerson').innerHTML = slicesPerPerson;
