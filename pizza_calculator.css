@@ -43,3 +43,7 @@ select {
 	font-family: cursive;
 	-webkit-appearance: none;
 }
+
+ul {
+	list-style-type: none;
+}
