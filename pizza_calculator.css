@@ -29,3 +29,17 @@ a.btTxt submit:hover {
 background-image: url(rollover-image-button-2.png);
 }
 
+
+body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 20px 50px 150px;
+  font-size: 13px;
+  text-align: center;
+  background: #E3CAA1;
+}
+
+select {
+	clear: left;
+	font-family: cursive;
+	-webkit-appearance: none;
+}
