@@ -120,12 +120,12 @@ display:inline-block;    /* It is important for the button to rotate*/
 }
 
 .button:hover{
--moz-transform: rotate(360deg);
--webkit-transform: rotate(360deg);
--o-transform: rotate(360deg);
-transform: rotate(360deg);
+-moz-transform: rotate(1080deg);
+-webkit-transform: rotate(1080deg);
+-o-transform: rotate(1080deg);
+transform: rotate(1080deg);
 
-background:#EB220C;
+background:#ffb44a;
 font-size:30px;
 color:#FFF;
 }

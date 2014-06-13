@@ -9,6 +9,11 @@ pizza_calculator.css ">
 text / javascript " src="
 pizza.js "></script>
   <body>
+  function showValue(newValue)
+{
+  document.getElementById("
+range ").innerHTML=newValue;
+}
     <h1>Pizza Calculator</h1>
     <section class="
 info ">
