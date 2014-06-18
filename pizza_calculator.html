@@ -15,9 +15,24 @@ Points: 0<input type="range" name="points" min="1" max="50">50
 </form>    
 
     <section class="info">
-      <ul>
+
+<p>How many people are getting pizza</p>
+<input type="range" min="0" max="100" value="00" step="1" id="people_slider" onchange="showPeople(this.value)" />
+<span id="number_of_people">0</span><br />
+
+<p>How much did the pizza cost</p>
+<input type="range" min="0" max="700" value="00" step=".01" id="cost_slider" onchange="showCost(this.value)" />
+<span id="total_cost">0</span><br />
+
+<p>How many pizza's did you buy</p>
+<input type="range" min="0" max="50" value="00" step="1" id="pizza_slider" onchange="showPizza(this.value)" />
+<span id="number_of_pizza">0</span><br />
+
+
+
+     <!--  <ul>
         <li><label for="number_of_people">How many people are getting pizza</label></br>
-          <select>
+          <select id="people_drop">
             <option>ONE</option>
             <option>TWO</option>
             <option>THREE</option>
@@ -32,7 +47,7 @@ Points: 0<input type="range" name="points" min="1" max="50">50
               <option>THREE</option>
             </select>
             <input type="text" name="number_of_pizza" id="number_of_pizza" required></br>
-            <label for="pizzaSize">What size do you want</label></br>
+            <label for="pizzaSize">What size do you want</label></br> -->
 
             <input type="radio" name="pizzasize" id="small" value="small">
             <label for="small">small</label>
