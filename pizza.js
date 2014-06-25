@@ -53,7 +53,7 @@ function calculate() {
     }
 
     costPerPerson = ("The cost per person is " + "$" + (totalCost / people).toFixed(2));
-    slicesPerPerson = ("Each person gets " + ((pizzas * pizzaSlices) / people).toFixed(1) + " pieces of pizza");
+    slicesPerPerson = ("Each person gets " + ((pizzas * pizzaSlices) / people).toFixed(0) + " pieces of pizza");
 
     document.getElementById('costPerPerson').innerHTML = costPerPerson;
     document.getElementById('slicePerPerson').innerHTML = slicesPerPerson;
