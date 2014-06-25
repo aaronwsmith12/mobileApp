@@ -1,3 +1,18 @@
+function showPeople(people) {
+    document.getElementById("number_of_people").innerHTML = people;
+	calculate();
+}
+
+function showPizza(pizza) {
+    document.getElementById("number_of_pizza").innerHTML = pizza;
+	calculate();
+}
+
+function showCost(cost) {
+    document.getElementById("total_cost").innerHTML = cost;
+	calculate();
+}
+
 function calculate() {
     var costPerPerson;
     var totalCost;
@@ -44,14 +59,3 @@ function calculate() {
     document.getElementById('slicePerPerson').innerHTML = slicesPerPerson;
 }
 
-function showPeople(people) {
-    document.getElementById("number_of_people").innerHTML = people;
-}
-
-function showPizza(pizza) {
-    document.getElementById("number_of_pizza").innerHTML = pizza;
-}
-
-function showCost(cost) {
-    document.getElementById("total_cost").innerHTML = cost;
-}
