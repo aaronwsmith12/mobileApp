@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pizza calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" type="text/css" href="pizza_calculator.css">
+  <script type="text/javascript" src="pizza.js"></script>
+  <body>
+    <h1>Pizza Calculator</h1>
+<form action="demo_form.asp" method="get">
+Points: 0<input type="range" name="points" min="1" max="50">50
+<input type="submit">
+</form>    
+
+    <section class="info">
+
+<p>How many people are getting pizza</p>
+<input type="range" min="0" max="100" value="00" step="1" id="people_slider" onchange="showPeople(this.value)" />
+<span id="number_of_people">0</span><br />
+
+<p>How much did the pizza cost</p>
+<input type="range" min="0" max="700" value="00" step=".01" id="cost_slider" onchange="showCost(this.value)" />
+<span id="total_cost">0</span><br />
+
+<p>How many pizza's did you buy</p>
+<input type="range" min="0" max="50" value="00" step="1" id="pizza_slider" onchange="showPizza(this.value)" />
+<span id="number_of_pizza">0</span><br />
+
+
+
+     <!--  <ul>
+        <li><label for="number_of_people">How many people are getting pizza</label></br>
+          <select id="people_drop">
+            <option>ONE</option>
+            <option>TWO</option>
+            <option>THREE</option>
+          </select>
+          <input type="text" name="number_of_people" id="number_of_people" required></br>
+          <li><label for="total_cost">How much did the pizza cost</label></br></li>
+          <input type="text" name="total_cost" id="total_cost" required></br>
+          <li><label for="number_of_pizza">How many pizza's did you buy</label></br>
+            <select>
+              <option>ONE</option>
+              <option>TWO</option>
+              <option>THREE</option>
+            </select>
+            <input type="text" name="number_of_pizza" id="number_of_pizza" required></br>
+            <label for="pizzaSize">What size do you want</label></br> -->
+
+            <input type="radio" name="pizzasize" id="small" value="small">
+            <label for="small">small</label>
+
+            <input type="radio" name="pizzasize" id="medium" value="medium">
+            <label for="medium">medium</label>
+
+            <input type="radio" name="pizzasize" id="large" value="large">
+            <label for="large">large</label></br>
+
+            <!--<a href="pizzaimg.jpg" class="btn">Calculate</a>-->
+    <div>
+            <input type="image" src="pizzaimg.jpg" width="100" height="100" name="saveForm" class="button" id="saveForm" onclick="calculate()" />
+    </div>
+            <!--<button type="button" onclick="calculate()"> calculate</button>-->
+            <div id="costPerPerson"></div>
+            <div id="slicePerPerson"></div>
+          </section>
+        </body>
+        </html>
