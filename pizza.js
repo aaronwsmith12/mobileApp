@@ -1,16 +1,30 @@
 function showPeople(people) {
     document.getElementById("number_of_people").innerHTML = people;
-	calculate();
+    calculate();
 }
 
 function showPizza(pizza) {
     document.getElementById("number_of_pizza").innerHTML = pizza;
-	calculate();
+    calculate();
 }
 
 function showCost(cost) {
     document.getElementById("total_cost").innerHTML = cost;
-	calculate();
+    calculate();
+}
+
+function showSize(size) {
+    if (size == 1) {
+        size = "small";
+    } else if (size == 2) {
+        size = "medium";
+    } else if (size == 3) {
+        size = "large";
+    } else {
+        size = "extra large";
+    }
+    document.getElementById("size").innerHTML = size;
+    calculate();
 }
 
 function calculate() {
@@ -18,44 +32,30 @@ function calculate() {
     var totalCost;
     var people;
     var pizzas;
-    var slicesPerPizza;
+    var slices
     var slicesPerPerson;
     var pizzaSize;
     var pizzaSlices;
     var slicesPerPerson;
-    var people_slider;
-    var pizza_slider;
-    var cost_slider
 
+    people = document.getElementById('people_slider').value;
+    pizzas = document.getElementById('pizza_slider').value;
+    cost = document.getElementById('cost_slider').value;
+    size = document.getElementById('size_slider').value;
 
-    totalCost = document.getElementById('total_cost').value;
-    people = document.getElementById('number_of_people').value;
-    pizzas = document.getElementById('number_of_pizza').value;
-    pizzaSize = document.getElementsByName('pizzasize').value;
-    people_slider = document.getElementById('people_slider').value;
-    pizza_slider = document.getElementById('pizza_slider').value;
-    cost_slider = document.getElementById('cost_slider').value;
-
-    pizzas = pizza_slider;
-
-    people = people_slider;
-
-    totalCost = cost_slider;
-
-    if (pizzaSize = document.getElementById('small').checked) {
-        pizzaSlices = 8;
-
-    } else if (pizzaSize = document.getElementById('large').checked) {
-        pizzaSlices = 16;
-
+    if (size == 1) {
+        slices = "8";
+    } else if (size == 2) {
+        slices = "12";
+    } else if (size == 3) {
+        slices = "16";
     } else {
-        pizzaSlices = 12;
+        slices = "20";
     }
 
-    costPerPerson = ("The cost per person is " + "$" + (totalCost / people).toFixed(2));
-    slicesPerPerson = ("Each person gets " + ((pizzas * pizzaSlices) / people).toFixed(0) + " pieces of pizza");
+    costPerPerson = ("The cost per person is " + "$" + (cost / people).toFixed(2));
+    slicesPerPerson = ("Each person gets " + ((pizzas * slices) / people).toFixed(0) + " pieces of pizza");
 
     document.getElementById('costPerPerson').innerHTML = costPerPerson;
     document.getElementById('slicePerPerson').innerHTML = slicesPerPerson;
 }
-
