@@ -14,17 +14,21 @@
 
     <section class="info">
 
-<p>How many people are getting pizza</p>
+<p>Number of People</p>
 <input type="range" min="0" max="100" value="00" step="1" id="people_slider" onchange="showPeople(this.value)" />
 <span id="number_of_people">0</span><br />
 
-<p>How much did the pizza cost</p>
+<p>Cost of Pizza</p>
 <input type="range" min="0" max="200" value="00" step=".01" id="cost_slider" onchange="showCost(this.value)" />
 <span id="total_cost">0</span><br />
 
-<p>How many pizza's did you buy</p>
+<p>Number of Pizzas</p>
 <input type="range" min="0" max="50" value="00" step="1" id="pizza_slider" onchange="showPizza(this.value)" />
 <span id="number_of_pizza">0</span><br />
+
+<p>Size of Pizza</p>
+<input type="range" min="1" max="4" value="00" step="1" id="size_slider" onchange="showSize(this.value)" />
+<span id="size">0</span><br />
 
 
 
@@ -44,10 +48,10 @@
               <option>TWO</option>
               <option>THREE</option>
             </select>
-            <input type="text" name="number_of_pizza" id="number_of_pizza" required></br>
+            <input type="text" name="number_of_pizza" id="number_o  f_pizza" required></br>
             <label for="pizzaSize">What size do you want</label></br> -->
 
-            <input type="radio" name="pizzasize" id="small" value="small">
+           <!--  <input type="radio" name="pizzasize" id="small" value="small">
             <label for="small">small</label>
 
             <input type="radio" name="pizzasize" id="medium" value="medium">
@@ -55,7 +59,7 @@
 
             <input type="radio" name="pizzasize" id="large" value="large">
             <label for="large">large</label></br>
-
+ -->
             <!--<a href="pizzaimg.jpg" class="btn">Calculate</a>-->
     <div>
             <input type="image" src="pizzaimg.jpg" width="100" height="100" name="saveForm" class="button" id="saveForm" onclick="calculate()" />
