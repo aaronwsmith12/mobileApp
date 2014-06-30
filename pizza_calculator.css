@@ -1,5 +1,5 @@
 body {
-  
+
   background: -moz-linear-gradient(top, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%); 
 
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0b7a1), color-stop(50%,#8c3310), color-stop(51%,#752201), color-stop(100%,#bf6e4e)); 
@@ -128,6 +128,13 @@ transform: rotate(1080deg);
 background:#ffb44a;
 font-size:30px;
 color:#FFF;
+}
+
+#range {
+  overflow: hidden;
+  width: 550px;
+  height: 395px;
+  position: absolute;
 }
 /* entire container, keeps perspective 
 .flip-container {
