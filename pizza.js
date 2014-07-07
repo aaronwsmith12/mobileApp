@@ -1,3 +1,7 @@
+function play() {
+    please;
+}
+
 function showPeople(people) {
     document.getElementById("number_of_people").innerHTML = people;
     calculate();
